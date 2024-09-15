@@ -13,7 +13,7 @@ export default function header() {
               schedule your appointment hassle-free.</p>
           </div>
           <button className='flex items-center bg-white py-3 px-4 space-x-4 my-2 transition-all duration-300 rounded-full mt-6'>
-              <Link href='' className=''><p className='text-sm'>Rent Your's Now</p></Link>
+              <Link href='' className=''><p className='text-sm'>Rent Your's Noww</p></Link>
               <Image src={images.arrow_icon} alt='arrow'></Image>
            </button>
         </div>
