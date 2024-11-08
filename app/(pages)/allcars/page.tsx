@@ -1,4 +1,4 @@
-export default function riders() {
+export default function allcar() {
     return (
       <div className="">
        <p>riders</p>

@@ -5,21 +5,21 @@ import { useState } from 'react';
 import images from "@/public/assets"
 import {specialityData} from '@/public/assets'
 export default function navbar() {
-    const [token, setToken] = useState<boolean | null>(false)
+    const [token, setToken] = useState<boolean | null>(true)
     const [showdropdown, setShowdropdown] = useState(false)
 
     return (
-        <nav className="">
-            <main className='bg-white p-3 shadow-lg'>
+        <nav className="fixed w-[100%]">
+            <main className='bg-white p-4 shadow-md'>
                 <div className='flex items-center justify-between '>
                     <div className="flex items-center space-x-8">
                         <Image src={images.pageLogo} alt="image"></Image>
 
                         <div className='flex space-x-6 items-center'>
-                            <h1 className='cursor-pointer font-semibold   text-[16px] bg-[#3563E9] text-white py-2 px-4 rounded-full'>HOME</h1>
-                            <h1 className='cursor-pointer font-semibold text-[16px] text-[#3563E9]'>ALL RIDERS</h1>
-                            <h1 className='cursor-pointer font-semibold text-[16px] text-[#3563E9]'>ABOUT</h1>
-                            <h1 className='cursor-pointer  font-semiboldtext-[16px] text-[#3563E9]'>CONTACT</h1>
+                            <h1 className='cursor-pointer font-semibold   text-[17px] '>HOME</h1>
+                            <h1 className='cursor-pointer font-semibold text-[17px] '>ALL CARS</h1>
+                            <h1 className='cursor-pointer font-semibold text-[17px] '>ABOUT</h1>
+                            <h1 className='cursor-pointer  font-semibold text-[17px]'>CONTACT</h1>
                         </div>
                     </div>
 
@@ -53,7 +53,7 @@ export default function navbar() {
                                     </div> : ''
                                 }
                             </div> :
-                            <button className='bg-[#3563E9] text-white py-[11px] px-4 rounded-full shadow-md font-medium text-[14px]'>
+                            <button className='bg-[#3563E9] text-white py-[11px] px-4 rounded-full shadow-md font-semibold text-[14px]'>
                                 <Link href='/login'>Create Account</Link></button>
 
                         }
